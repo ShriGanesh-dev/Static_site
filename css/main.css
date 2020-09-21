@@ -19,6 +19,7 @@ html {
   width:auto;
 }
 
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -263,10 +264,11 @@ textarea {
   }
 }
 
+
 .circle {
   border-radius: 50%;
-  background-color: black;
-  z-index:-1;
+  background-color: paleturquoise;
+  z-index:1;
 }
 .small-circle {
   height: 100px;
