@@ -15,10 +15,14 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  height: 3000px;
-  width:auto;
+
 }
 
+body{
+  background-color: #fddb3a;
+  overflow-x: hidden;
+  overflow-y: hidden;/* Hide scrollbars */
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -266,13 +270,21 @@ textarea {
 
 
 .circle {
+  position: absolute;
   border-radius: 50%;
   background-color: paleturquoise;
-  z-index:1;
+  z-index: -1;
 }
 .small-circle {
   height: 100px;
   width: 100px;
+}
+.small-circle-side {
+  position: absolute;
+  transform: rotate(-90deg);
+  height: 100px;
+  width: 200px;
+  border-radius: 150px 150px 0 0;
 }
 .big-circle {
   height: 300px;
@@ -294,9 +306,9 @@ textarea {
 }
 
 .circle2-pos {
-  position: absolute;
+  position: relative;
   top: 100px;
-  right: -60px;
+  left:92%;
 }
 
 .circle3-pos {
@@ -320,5 +332,27 @@ textarea {
   top: 1100px;
   left: 1050px;
 }
+.nav{
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  text-align: right;
 
+}
+.nav-item{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 26px;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 58px;
+}
+
+.find{
+  font-family: 'Dancing Script', cursive;
+  font-size: 46px;
+  position: absolute;
+  top:41.8%;
+  left:35%;
+}
 
